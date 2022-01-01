@@ -9,17 +9,12 @@ import { Example } from './ModalComponent';
 
 export const SidebarComponent = () => {
     return (
-        <aside className= "w-25">
-          
-            <nav className="nav flex-column">
-                <Link to="/Inicio">Inicio</Link>
-                <Link to="/Ejemplo">Ejemplo</Link>
-            </nav>
-            <div>
-            <Example/>
-            
-            </div>
-      
-        </aside>
+          <>
+            <nav className="nav flex-column ps-0 sidebar text-center">
+                <Link to="/Inicio" className='p-3 link_nav'>Inicio</Link>
+                <Link to="/Ejemplo" className='p-3 pb-4 link_nav'>Ejemplo</Link>
+                <Example/>  
+            </nav>        
+        </>
     )
 }

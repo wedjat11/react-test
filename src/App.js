@@ -11,17 +11,21 @@ import { Inicio } from './paginas/Inicio';
   
     return (
       <>
-        <HeaderComponent/>
-        <SidebarComponent/>
-        <Routes>
-          <Route path="Inicio" element={<Inicio />} />
-          <Route path="Ejemplo" element={<Ejemplo />} />
-        </Routes>
-       
-      </>
-      
-      
-      
+      <HeaderComponent/>
+      <div className="fluid-container">
+        <div className="row">
+          <div className="col-sm-2 p-0">
+          <SidebarComponent/> 
+          </div>
+          <div className="col-sm-10 p-2" >
+            <Routes>
+              <Route path="Inicio" element={<Inicio />} />
+              <Route path="Ejemplo" element={<Ejemplo />} />
+            </Routes>
+          </div>
+        </div>
+      </div>   
+      </>     
     );
   }
 

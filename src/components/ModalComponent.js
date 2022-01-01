@@ -8,7 +8,7 @@ export function Example() {
   
     return (
       <>
-        <Button variant="primary" size="sm" className="mx-sm-3" onClick={handleShow}>
+        <Button variant="primary" size="sm" className="text-center button_modal" onClick={handleShow}>
           Salir
         </Button>
   

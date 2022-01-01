@@ -22,3 +22,11 @@ button{
 .btn-primary{
     background-color:#057ec7 !important;
 }
+.sidebar{
+    height: 100%;
+    background-color: #057ec7;
+}
+.link_nav, .button_modal{
+    color: #f2b81e !important;
+    font-size: larger !important;
+}
