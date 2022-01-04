@@ -1,5 +1,7 @@
 import { Button, Modal } from "react-bootstrap";
 import React, { useState } from "react";
+
+
 export function Example() {
     const [show, setShow] = useState(false);
   
@@ -25,10 +27,12 @@ export function Example() {
           ¿Desea salir del proyecto? 
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button variant="secondary"onClick={handleClose}>
               Aceptar
             </Button>
-            <Button variant="primary">cancelar</Button>
+            <Button variant="primary" onClick={handleClose}>
+              cancelar
+            </Button>
           </Modal.Footer>
         </Modal>
       </>
